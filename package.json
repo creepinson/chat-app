@@ -5,6 +5,10 @@
     "workspaces": [
         "packages/*"
     ],
+    "engines": {
+        "node": "14.x",
+        "yarn": "1.x"
+    },
     "description": "Chat app",
     "main": "index.js",
     "scripts": {
