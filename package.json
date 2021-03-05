@@ -1,0 +1,17 @@
+{
+    "name": "chat",
+    "version": "1.0.0",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "description": "Chat app",
+    "main": "index.js",
+    "scripts": {
+        "start": "yarn workspaces server run start",
+        "build": "yarn workspaces foreach run build"
+    },
+    "keywords": [],
+    "author": "Theo Paris",
+    "license": "GPL-3.0-or-later"
+}

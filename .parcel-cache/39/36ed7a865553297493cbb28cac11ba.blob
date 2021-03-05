@@ -1,0 +1,43 @@
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _socketIoClient = require("socket.io-client");
+  require("./app.scss");
+  var _chakraUiReact = require("@chakra-ui/react");
+  var _jsxFileName = "/home/theo/Documents/chat/packages/client/src/App.tsx";
+  const socket = _socketIoClient.io(`${undefined || "localhost:8080"}`);
+  function App() {
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement(_chakraUiReact.Flex, {
+        bg: "gray.800",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_chakraUiReact.Text, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 13
+        }
+      }, "Rollup + TypeScript + Socket.io + React = ❤️"))
+    );
+  }
+  exports.default = App;
+  _c = App;
+  var _c;
+  $RefreshReg$(_c, "App");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

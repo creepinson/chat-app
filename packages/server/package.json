@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "ts-node-dev src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^3.13.0",
+    "fastify-cors": "^5.2.0",
+    "fastify-socket.io": "^1.0.2",
+    "socket.io": "^3.1.2"
+  },
+  "devDependencies": {
+    "@types/socket.io": "^2.1.13",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.2"
+  }
+}
